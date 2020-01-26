@@ -6,7 +6,7 @@ using namespace std;
 bool BinarySearch(int start, int end, int target, int array[]) {
 	int mid = (start + end)/2;
 	if (array[mid] == target) {
-		return true;
+		count++;
 	}
 	else if (target < array[mid]) {
 		return BinarySearch(start, (end/2)-1, target, array);
