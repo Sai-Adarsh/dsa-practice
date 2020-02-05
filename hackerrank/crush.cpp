@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int findMax(int array[], int n) {
+int findMax(long long int array[], long long int n) {
 	int max = array[0];
 	for (int i=1; i<n; i++) {
 		if(array[i] > max) {
@@ -13,10 +13,10 @@ int findMax(int array[], int n) {
 }
 
 int main() {
-	int n, m;
+	long long int n, m;
 	cin>>n>>m;
-	int array[n] = { };
-	int abk[m][3];
+	long long int array[n] = { };
+	long long int abk[m][3];
 	for (int i=0; i<m; i++) {
 		for (int j=0; j<3; j++) {
 			cin>>abk[i][j];
